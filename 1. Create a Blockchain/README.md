@@ -5,10 +5,14 @@ To start you must first install Postman and create an account as we will use it 
 In this blockchain.py code we are simply creating a blockchain network with the following methods:
 
   create_block: create a new block with attributes of its index in the chain, time created, proof and the previous blocks hash code 
+  
   get_previous_block: return last block in chain
+  
   proof_of_work: calculate a blocks proof of work using sha256 hash code and loop until we get a proof with 4 leading zeroes. Feel free to change hash operation formula to whatever you like and decide your own condition for a valid proof value.
+  
   hash: calculate a blocks sha256 hash value using haslib library
-  is_chain_valid: check if our blockchain is valid,meaning all blocks previous proof values are equal to the hash of the previous block
+  
+  is_chain_valid: check if our blockchain is valid, meaning all blocks previous proof values are equal to the hash of the previous block
   
   Note we are using Flask to run our blockchain, see https://flask.palletsprojects.com/en/1.1.x/quickstart/ if interested in understanding how it works
   
