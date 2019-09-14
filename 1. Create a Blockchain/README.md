@@ -14,11 +14,16 @@ In this blockchain.py code we are simply creating a blockchain network with the 
   
   To run our blockchain:
     1- Open Postman
+    
     2- Create a new request, use 'GET'
+    
     3- In the URL slot type 'http://127.0.0.1:5000/get_chain' which uses the port 5000 for flask and runs the get_chain method.
        Notice we have created our genesis block and the format is in JSON.
+       
     4- To add a new block simply type 'http://127.0.0.1:5000/mine_block'
+    
     5- Call get_chain again to see entire blockhain, feel free to mine as many blocks as you like!
+    
     6- Call 'is_valid' to see if your blockchain is valid
     
   
