@@ -13,6 +13,7 @@ In this blockchain.py code we are simply creating a blockchain network with the 
   Note we are using Flask to run our blockchain, see https://flask.palletsprojects.com/en/1.1.x/quickstart/ if interested in understanding how it works
   
   To run our blockchain:
+  
     1- Open Postman
     
     2- Create a new request, use 'GET'
