@@ -26,4 +26,4 @@ How to run 'Create a Cryptocurrency':
   
   4- Click on 'body', then 'raw', then select JSON format text and copy the file 'nodes.json' into the body. Make sure to delete the line with port 5001 as we want to connect 5001 to both 5002 and 5003 and not itself. Send the request.
   
-  If all goes well, it should look like this: ![Alt text](/Desktop/postman_shot.png?raw=true)
+  If all goes well, it should look like this: ![Screenshot](/Desktop/postman_shot.png)
