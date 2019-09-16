@@ -26,8 +26,21 @@ How to run 'Create a Cryptocurrency':
   
   4- Click on 'body', then 'raw', then select JSON format text and copy the file 'nodes.json' into the body. Make sure to delete the line with port 5001 as we want to connect 5001 to both 5002 and 5003 and not itself. Send the request.
   
-  If all goes well, it should look like this: ![Screenshot](/Desktop/postman_shot.png)
+  If all goes well, it should look like something this: ![Screenshot](/Desktop/postman_shot.png)
   
   5- Repeat step 4 but instead connect 5002 to 5001+5003 and 5003 to 5001+5002.
   
+  6- Aplly the get_chain command to all three persons to create genesis block for each, notice timestamp will be different for each but do not worry
+  
+  7- On person 5001 apply the mine_block method, notice I received 100 nikascoins from an unknown adress. Feel free to change this part of code to whatever you like (line 123 on all three files)
+  
+  8- To add a transaction, on any person with a POST request, type /add_transaction in URL and go to body, raw, JSON text and copy 'transaction.js' file into the body. Fill in your desired arguments of transaction. Send request when done.
+  
+  9- Notice transaction is still not in a block, thats because we must mine a block for a transaction to be valid! Call the mine_block request and you should see your transaction on a block.
+  
+  If all goes well it shoukd look something like this
+  
+ 10- Notice how not all three people have the same chain if you call 'get_chain' on each person. To fix that simply call '/replace_chain' GET request on all three. Notice how now everyone has the longest most up to date chain.
+ 
+ 11- Call 'is_valid' to verify all three chains are valid
   
