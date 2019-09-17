@@ -8,6 +8,7 @@ This cryptocurrency is not worth anything and is used for demonstration purposes
 
 Notice the nikascoin.py file contains the entire code of blockchain.py with many added features and methods:
 
+
 add_transaction: simply create a transaction between a sender and a receiver for an amount of nikascoins
 
 add_node: add a node to the blockchain network
@@ -16,7 +17,9 @@ replace_chain: replcaing the chain by the longest chain in network (Consensus Pr
 
 Notice there are three different files each with ports 5001, 5002 and 5003 respectively. These files will represent a single person in the network and we will interconnect them all so we can make transactions between one another.
 
+
 How to run 'Create a Cryptocurrency':
+
 
   1- Open three IPython consoles and run each nikascoin_node_500(1)(2)(3).py code in each console. These consoles will represent a different person connected to the same chain.
   
