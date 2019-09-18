@@ -13,7 +13,7 @@ Notice the nikascoin.py file contains the entire code of blockchain.py with many
 
     add_node: add a node to the blockchain network
 
-    replace_chain: replcaing the chain by the longest chain in network (Consensus Protocol)
+    replace_chain: replacing the current chain of someone by the longest chain in network (Consensus Protocol)
 
     Notice there are three different files each with ports 5001, 5002 and 5003 respectively. These files will represent a     single person in the network and we will interconnect them all so we can make transactions between one another.
 
