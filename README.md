@@ -1,5 +1,5 @@
 # Nikascoin
-A demo cryptocurrency
+A demo cryptocurrency using Python and Flask backend
 
 You can use this to create your own blockchain, cryptocurrency and smart contracts
 
